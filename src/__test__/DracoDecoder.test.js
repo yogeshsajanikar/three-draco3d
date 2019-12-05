@@ -1,9 +1,9 @@
-//@flow
-
 import { DracoDecoder } from '../index';
-import { test, expect } from 'jest';
+require('jest');
 
-test("Should correctly load draco decoder module", () => {
-    const decoder = new DracoDecoder();
-    expect(decoder.decoder).toBeNonNull();
+describe("Decoder Test", () => {
+    it("Should correctly load draco decoder module", () => {
+        const decoder = new DracoDecoder();
+        expect(DracoDecoder.Decoder).toBeNonNull();
+    })
 })

@@ -14,7 +14,7 @@ type DecoderModule = {
 export class DracoDecoder {
 
     static decoderModule : DecoderModule = createDecoderModule({});
-    static decoder: Decoder = decoderModule.decoder;
+    static decoder: Decoder = DracoDecoder.decoderModule.Decoder;
 
     constructor() {
     }
