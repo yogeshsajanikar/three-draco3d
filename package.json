@@ -2,7 +2,7 @@
   "name": "three-draco3d",
   "version": "0.1.0",
   "description": "ThreeJS Geometry encoder decoder for draco3d",
-  "main": "index.js",
+  "main": "lib/index.js",
   "author": "Yogesh Sajanikar",
   "license": "MIT",
   "dependencies": {
@@ -25,7 +25,7 @@
   },
   "scripts": {
     "build": "babel src/ -d lib/",
-    "prepare": "yarn run build",
+    "prepublishOnly": "yarn run build",
     "test": "jest"
   },
   "jest": {
